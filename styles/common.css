@@ -1,0 +1,121 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: repeat(3, minmax(100px, max-content));
+    grid-gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    grid-column: 1/-1;
+    border-bottom: 1px solid slategrey;
+    position: relative;
+}
+
+.main {
+    grid-column: 1;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+}
+
+.aside {
+    grid-column: 2;
+    border-left: 1px solid slategrey;
+}
+
+.footer {
+    grid-column: 1/-1;
+    border-top: 1px solid slategrey;
+}
+
+.menu-list {
+    position: absolute;
+    bottom: 0; 
+    right: 0;
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-list li {
+    display: inline-block;
+    font-size: 22px;
+    padding: 6px;
+    font-weight: bold;
+}
+
+.menu-list li:hover {
+    background-color: lightgray;
+}
+
+.menu-item:hover {
+    color: midnightblue;
+}
+
+.menu-item-active {
+    color: #2da1c4;
+}
+
+.social-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.social-list li {
+    display: inline-block;
+}
+
+.search-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.menu-hamburger {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+@media all and (max-width: 780px) {
+    .menu-list,
+    .social-list {
+        display: none;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, minmax(30px, max-content));
+        grid-gap: 5px;
+    }
+    .menu-hamburger {
+        display: block;
+        grid-column: 1;
+    }
+    .search-icon {
+        grid-column: 2;
+    }
+    .logo {
+        grid-column: 1/-1;
+        margin: auto;
+    }
+}

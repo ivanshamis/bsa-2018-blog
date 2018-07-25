@@ -1,0 +1,30 @@
+.article-img {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+
+.article-title {
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.article span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.article span.inline {
+    display: inline;
+}
+
+.article-author {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.article-rating {
+    margin-top: 10px;
+}

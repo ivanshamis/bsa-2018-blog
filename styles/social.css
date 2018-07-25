@@ -1,0 +1,42 @@
+a.fb {
+    background: url(images/social_fb_black.png);    
+   }
+
+a.fb:hover {
+    background: url(images/social_fb.png); 
+}
+
+a.twit {
+    background: url(images/social_twit_black.png);    
+   }
+
+a.twit:hover {
+    background: url(images/social_twit.png); 
+}
+
+a.insta {
+    background: url(images/social_insta_black.png);    
+   }
+
+a.insta:hover {
+    background: url(images/social_insta.png); 
+}
+
+a.pint {
+    background: url(images/social_pint_black.png);    
+   }
+
+a.pint:hover {
+    background: url(images/social_pint.png); 
+}
+
+a.social-icon {
+    width: 50px; 
+    height: 50px; 
+    background-size: 50px;
+    display: block;
+}
+
+a.social-icon:hover {
+    background-size: 50px;
+}
