@@ -13,7 +13,7 @@ a {
 .container {
     display: grid;
     grid-template-columns: 1fr 250px;
-    grid-template-rows: repeat(3, minmax(100px, max-content));
+    grid-template-rows: repeat(3, minmax(50px, max-content));
     grid-gap: 10px;
     max-width: 1200px;
     margin: auto;
@@ -87,12 +87,28 @@ a {
 }
 
 .footer {
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer .social-list {
-    margin-top: 20px;
-    margin-right: 100px;
+    padding: 10px;
+}
+
+.footer .copyright {
+    font-family: "Font Awesome 5 Free";
+    padding: 10px;
+}
+
+.footer .tag-list {
+    padding: 10px;
+    margin-top: -10px;
+}
+
+.footer .tag-list a {
+    background-color: rgba(120,120,120,0.6);;   
 }
 
 .copyright {
@@ -117,11 +133,6 @@ a {
     margin-top: 20px;
     padding: 10px;
 }
-
-.footer .copyright {
-    font-family: "Font Awesome 5 Free";
-}
-
 
 @media all and (max-width: 780px) {
     .menu-list,
