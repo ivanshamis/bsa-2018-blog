@@ -1,6 +1,10 @@
 .aside div {
+    margin-bottom: 20px;
+}
+
+.aside > div {
     margin-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .aside input {
@@ -17,7 +21,7 @@
 }
 
 .aside .social-list {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .aside h1 {
