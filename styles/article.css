@@ -1,6 +1,6 @@
 .article-img {
     float: left;
-    margin-right: 5px;
+    margin-right: 10px;
     margin-bottom: 5px;
     width: 180px;
 }
@@ -27,4 +27,9 @@
 
 .article-rating {
     margin-top: 10px;
+}
+
+.article:hover .article-img,
+.article:focus .article-img {
+  transform: scale(1.1);
 }
