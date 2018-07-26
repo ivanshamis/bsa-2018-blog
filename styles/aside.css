@@ -1,0 +1,147 @@
+.aside div {
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.aside input {
+    display: block;
+    height: 25px;
+    padding: 3px 3px;
+    margin-bottom: 5px;
+}
+
+.aside .author img {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.aside .social-list {
+    margin-bottom: 10px;
+}
+
+.aside h1 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.aside input:focus {
+    outline: solid 2px #0abaed;
+}
+
+.aside button {
+    cursor: pointer;
+    color: white;
+    background-color: #56baed;
+    border:none;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.aside button:hover {
+    background-color: #39ace7;
+    box-shadow: 3px 6px 10px rgba(95,186,233,0.4);
+}
+
+.tag-list a:hover {
+    background-color: steelblue;
+}
+
+.subscribe-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.subscribe-btn {
+    padding: 10px 40px;
+    grid-row: 3;
+}
+
+.subscribe-btn:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0e0";
+    margin-left: 10px;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    grid-gap: 2px;
+    padding-right: 20px;
+}
+
+.search-form input {
+    display: block;
+    grid-column: 1;
+    margin: 0px;
+}
+
+.search-form button {
+    display: block;
+    grid-column: 2;
+    padding: 9px 20px;
+}
+
+.search-form button:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f002";
+    margin-left: -6px;
+}
+
+.tag-list a {
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #39ace7;
+    padding: 5px;
+}
+
+.last-comment {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 3fr 1fr;   
+}
+
+.last-comment img {
+    border-radius: 100px;
+    width: 50px;
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 5px;
+    border: 3px solid #39ace7;
+    box-shadow: 0 0 7px #666;
+}
+
+.last-comment:hover img{
+    border: 3px solid #095d86;
+}
+
+.last-comment:hover h1,
+.last-comment:hover span
+{
+    font-weight: bold;
+}
+
+.last-comment h1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.last-comment span {
+    display: inline-block;
+    grid-column: 1/-1;
+    grid-row: 2;
+    font-size: 13px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
