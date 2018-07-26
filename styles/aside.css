@@ -21,7 +21,7 @@
 }
 
 .aside h1 {
-    font-size: 17px;
+    font-size: 18px;
     margin-bottom: 5px;
 }
 
@@ -47,10 +47,6 @@
 .aside button:hover {
     background-color: #39ace7;
     box-shadow: 3px 6px 10px rgba(95,186,233,0.4);
-}
-
-.tag-list a:hover {
-    background-color: steelblue;
 }
 
 .subscribe-form {
@@ -95,30 +91,42 @@
     margin-left: -6px;
 }
 
+.tag-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .tag-list a {
     color: white;
-    display: inline-block;
     font-size: 15px;
-    margin: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
     border-radius: 5px;
     background-color: #39ace7;
     padding: 5px;
 }
 
+.tag-list a:hover {
+    background-color: steelblue;
+}
+
 .last-comment {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 3fr 1fr;   
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .last-comment img {
     border-radius: 100px;
-    width: 50px;
-    grid-column: 1;
-    grid-row: 1;
-    margin-bottom: 5px;
+    width: 40px;
+    margin-right: 5px;
     border: 3px solid #39ace7;
     box-shadow: 0 0 7px #666;
+    float: left;
+    grid-column: 1;
+    grid-row: 1/-1;
 }
 
 .last-comment:hover img{
@@ -137,11 +145,10 @@
 }
 
 .last-comment span {
-    display: inline-block;
-    grid-column: 1/-1;
-    grid-row: 2;
     font-size: 13px;
     white-space: nowrap; 
     overflow: hidden; 
     text-overflow: ellipsis;
+    grid-column: 2;
+    grid-row: 2;
 }

@@ -1,27 +1,48 @@
-.article-img {
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    width: 180px;
+.article {
+    border: 1px solid lightgray;
+    padding: 10px;
 }
 
-.article-title {
-    font-size: 16px;
-    display: inline-block;
-    margin-bottom: 5px;
+.article-img-parent {
+    width: 400px;
+    height: 233px;
+}
+
+.article-img {
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+
+.article h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .article span {
     display: block;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .article span.inline {
     display: inline;
+    font-size: 16px;
 }
 
-.article-author {
-    font-size: 14px;
+.article span.article-author {
+    font-size: 16px;
+}
+
+.article span.inline:before {
+    margin: 5px;
+}
+
+.article-date, .article-author {
     font-style: italic;
 }
 
@@ -29,7 +50,6 @@
     margin-top: 10px;
 }
 
-.article:hover .article-img,
-.article:focus .article-img {
-  transform: scale(1.1);
+.article:hover .article-img {
+  background-size: 120%;
 }
